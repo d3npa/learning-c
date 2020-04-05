@@ -30,7 +30,9 @@ void read_employee(struct employee *emp) {
 
 void print_employee(struct employee *emp) {
 	printf("============================================\n");
-	printf("Employee information for %s %s:\n", &emp->first_name, &emp->last_name);
+	printf("Employee information for %s %s:\n",
+			&emp->first_name,
+			&emp->last_name);
 	printf("Employee ID: %06d\n", emp->id);
 	printf("SSN (Last 4 Digits): %04d\n", emp->ssn_last4);
 	printf("Title: %s\n\n", &emp->title);
